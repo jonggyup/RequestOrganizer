@@ -36,8 +36,8 @@ fio --name=job1 --ioengine=sync --rw=read --numjobs=8 --bs=128k --size=10m --dir
 read_throuput=$(cat ./read_result_samsung.txt | tail -4 | awk '{print $2}' | head -1 | cut -d '=' -f 2)
 read_avg=$(cat ./read_result_samsung.txt | head -9 | tail -1 | awk '{print $5}' | cut -d '=' -f 2 | cut -d ',' -f 1)
 
-rm ./write_result_samsung.txt
-rm ./read_result_samsung.txt
+./write_result_samsung.txt
+./read_result_samsung.txt
 
 echo "Write Throughput = " $write_throuput 
 echo "Write Avg. Latency = " $write_avg 

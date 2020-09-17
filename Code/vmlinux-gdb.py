@@ -1,0 +1,1 @@
+/home/jonggyu/Codes/linux-4.19.122/scripts/gdb/vmlinux-gdb.py
